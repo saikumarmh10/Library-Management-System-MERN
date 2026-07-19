@@ -10,7 +10,7 @@ function Signin() {
 
   const { dispatch } = useContext(AuthContext);
 
-  const API_URL = "http://localhost:5000/";
+  const API_URL = process.env.REACT_APP_API_URL;
   console.log("API URL:", API_URL);
 
   const loginCall = async () => {
